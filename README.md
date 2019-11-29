@@ -11,7 +11,7 @@ As this was a quick project of mine... I am making this open source for people t
 If you need any help on hosting, feel free to message me on Discord:<br>NTM Nathan #0001 or join my [Support Server](https://discordapp.com/invite/rvrFHCJ)
 
 <h3>Commands</h3>
-Prefix: `t+` (Changeable if self hosting this bot)
+Prefix: t+ (Changeable if self hosting this bot)
 
 - `t+tag <name>` **»** This will get the Tag on the Server
 - `t+addtag <name> <content>` `Aliases: add` **»** This will create a tag on the Server, Please note that Single Tag Names ("Nate, OwO etc.") can only be used.
