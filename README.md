@@ -11,7 +11,7 @@ As this was a quick project of mine... I am making this open source for people t
 If you need any help on hosting, feel free to message me on Discord:<br>NTM Nathan #0001 or join my [Support Server](https://discordapp.com/invite/rvrFHCJ)
 
 <h3>Commands</h3>
-**Prefix: `t+`** (Changeable if self hosting this bot)
+Prefix: `t+` (Changeable if self hosting this bot)
 
 - `t+tag <name>` **»** This will get the Tag on the Server
 - `t+addtag <name> <content>` `Aliases: add` **»** This will create a tag on the Server, Please note that Single Tag Names ("Nate, OwO etc.") can only be used.
@@ -22,7 +22,7 @@ If you need any help on hosting, feel free to message me on Discord:<br>NTM Nath
 - `t+help` `Aliases: servertags, tags` **»** Shows all Commands and information
 - `t+about` `Aliases: info` **»** About Information regarding the Bot
 - `t+botstats` `Aliases: stats, bot` **»** Shows Bot Statistics
-- `t+avatar` `Aliases: icon` **»** Shows Bot Statistics
+- `t+avatar` `Aliases: icon` **»** Gets User Avatar
 - `t+ping` `Aliases: latency` **»** Returns the Ping (Latency) of the Bot
 - `t+say` **»** Make the Bot Say Something.
 
@@ -73,6 +73,8 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
 - discord.js: 11.4.2
 - quick.db: 7.0.0-b21 - **Do not Change quick.db Version!**
 - parse-ms: 2.0.0
+- moment: 2.24.0
+- moment-duration-format: 2.2.2
 
 <h3>
   Special Thanks!
