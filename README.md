@@ -1,0 +1,87 @@
+<img src="https://i.imgur.com/RICdATH.png">
+
+# Server Tags Bot by [NTM Nathan](https://ntmnathan.glitch.me/)
+
+<hr>
+
+Server Tags is a Discord Bot that focuses on the creation of tags, recalling them and viewing a list of them. The tags all have a unique name on your guild, well for example: when you create the tag "Nate" on "Nate Bot Support", that tag can only be retrieved on that server and not on other servers. It doesn't conflict on other servers.
+
+As this was a quick project of mine... I am making this open source for people to use and enjoy. I fully appreciate a star on the Repo and if you find any issues. Feel free to open up an issue and i'll look into it.
+
+If you need any help on hosting, feel free to message me on Discord:<br>NTM Nathan #0001 or join my [Support Server](https://discordapp.com/invite/rvrFHCJ)
+
+<h3>Commands</h3>
+**Prefix: `t+`** (Changeable if self hosting this bot)
+
+- `t+tag <name>` **»** This will get the Tag on the Server
+- `t+addtag <name> <content>` `Aliases: add` **»** This will create a tag on the Server, Please note that Single Tag Names ("Nate, OwO etc.") can only be used.
+- `t+edittag <name> <content>` `Aliases: edit` **»** This will edit the **Content** of the Tag on the Server
+- `t+deletetag <name>` `Aliases: delete` **»** This will delete the Tag from the Server (Yes/No Confirmation System)
+- `t+taginfo <name>` **»** This will get the Tag Information on the Server
+- `t+taglist` **»** This will list all the Tags that were created on the Server.
+- `t+help` `Aliases: servertags, tags` **»** Shows all Commands and information
+- `t+about` `Aliases: info` **»** About Information regarding the Bot
+- `t+botstats` `Aliases: stats, bot` **»** Shows Bot Statistics
+- `t+avatar` `Aliases: icon` **»** Shows Bot Statistics
+- `t+ping` `Aliases: latency` **»** Returns the Ping (Latency) of the Bot
+- `t+say` **»** Make the Bot Say Something.
+
+<h3>
+  How to Host
+</h3>
+
+**On Glitch:**
+
+`1.` Its really easy to host this bot on Glitch (ideal for small bots), just clone this repo onto your Glitch Project.
+
+`2.` Go to [Discord Developer Portal](https://discordapp.com/developers/applications/), create a **New Application** and Make a Bot. And then Copy the **Bot Token** on the Bot Page
+
+`3.` This project is provided with an .env file so with that copied Bot Token, paste the Token into the .env file.
+
+`4.` Run the Bot with watch.json
+
+`5.` You can also view the API Json List of Every Tag from Every Server here: https://"projectname".glitch.me/api/tags
+
+**Hosting on your Computer:**
+
+`1.` Downloading
+In a new Command Prompt/Terminal window in your project's folder, you'll need to run the following:
+
+**`git clone https://github.com/NTMNathan/servertagsbot.git`**
+
+`2.` Finishing the Git Cloning
+
+- In the folder where you ran the git command, run `cd servertagsbot` and then run `npm install`, this will install all required packages from the package.json, then it will run the installer.
+
+- You will be prompted to supply a number of access tokens and keys for various platforms, that means you will need to follow the on screen instructions to complete the installation.
+
+`3.` Starting the Bot
+
+To start the bot, in the Command Prompt/Terminal window, run the following command:
+
+**`node app.js`**
+
+This will make the bot online! Don't ever share any tokens/secrets with anybody!
+
+<hr>
+
+<h3>
+  Packages Used
+</h3>
+
+- express.js: 4.16.4
+- discord.js: 11.4.2
+- quick.db: 7.0.0-b21 - **Do not Change quick.db Version!**
+- parse-ms: 2.0.0
+
+<h3>
+  Special Thanks!
+</h3>
+
+- Jazz#0682 for helping test this!
+
+- RyansHDs#4461 for being a **Good Developer** for me
+
+- Panda Dev#3934 (Had to put you here for a good reason)
+
+- ꚂharifPoetra#8030 for giving me some good advice on development

@@ -1,0 +1,29 @@
+{
+  "name": "servertagsbot",
+  "version": "1.0.0",
+  "description": "Server Tags Bot Discord - Mastered",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "discord.js": "^11.5.1",
+    "quick.db": "^7.0.0-b21",
+    "parse-ms": "^2.0.0",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.2.2"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
