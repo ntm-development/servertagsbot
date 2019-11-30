@@ -1,6 +1,8 @@
 <img src="https://i.imgur.com/RICdATH.png">
 
 # Server Tags Bot by [NTM Nathan](https://ntmnathan.glitch.me/)
+**[Invite the Bot](https://discordapp.com/oauth2/authorize?client_id=649805592059183134&scope=bot&permissions=0)** | **[Support Server](https://discordapp.com/invite/rvrFHCJ)**
+
 
 <hr>
 
