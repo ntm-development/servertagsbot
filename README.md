@@ -87,5 +87,3 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
 - RyansHDs#4461 for being a **Good Developer** for me
 
 - Panda Dev#3934 (Had to put you here for a good reason)
-
-- ꚂharifPoetra#8030 for giving me some good advice on development
