@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "discord.js": "^11.5.1",
+    "discord.js": "^12.1.1",
     "quick.db": "^7.0.0-b21",
     "parse-ms": "^2.0.0",
     "moment": "^2.24.0",
