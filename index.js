@@ -37,9 +37,9 @@ dbl.on('error', e => {
 
 
 bot.on("ready", async () => {
-  console.log(`ServerTags » Bot online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity(`t+help | Managing all the Server Tags! - Now Updated to Discord.js v12!`);
-  bot.user.setStatus('online');
+  console.log(`ServerTags » Bot online on ${bot.guilds.cache.size} servers!`);
+    bot.user.setActivity("t+help | Managing all the Server Tags!", { type: "PLAYING"})
+
 
   bot.on("message", async message => {
     if(message.author.bot) return;
