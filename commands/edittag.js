@@ -23,11 +23,11 @@ exports.run = async (client, message, args, color) => {
 
         db.set(`tags_${message.guild.id}-${name}.content`, value);
    
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed()
         .setTitle(`**Tags**`)
         .setDescription(`**Tag Edited!** 📝\n\n**Tag Name »** ${name}\n${value}`)
         .setColor(`#f9f08e`)
-        .setFooter(`Note: This tag can only be accessed on this Server!`, `${message.guild.iconURL}?size=2048`)
+        .setFooter(`Note: This tag can only be accessed on this Server!`, `${message.guild.iconURL({dynamic: true, size: 2048})}`)
        
         message.channel.send(embed)
    

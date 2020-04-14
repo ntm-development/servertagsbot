@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const bot = new Discord.Client({disableEveryone: true});
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBLTOKEN, bot);
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
@@ -25,9 +27,18 @@ fs.readdir("./commands/", (err, files) => {
 });
 })
 
+dbl.on('posted', () => {
+  console.log('Server count posted!');
+})
+
+dbl.on('error', e => {
+ console.log(`Server Tags » ${e}`);
+})
+
+
 bot.on("ready", async () => {
   console.log(`ServerTags » Bot online on ${bot.guilds.size} servers!`);
-  bot.user.setActivity(`t+help | Managing all the Server Tags!`);
+  bot.user.setActivity(`t+help | Managing all the Server Tags! - Now Updated to Discord.js v12!`);
   bot.user.setStatus('online');
 
   bot.on("message", async message => {

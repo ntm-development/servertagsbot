@@ -3,7 +3,7 @@ const db = require('quick.db')
 
 module.exports.run = async (bot, message, args) => {
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
     .setTitle("**Server Tags Help**")
     .setDescription(`➜ For help, join our **[Support Server](https://discord.gg/v82EGYX)**\n➜ **t+about** for Information`)
     .setThumbnail(`https://i.imgur.com/kCPLvwj.png`)

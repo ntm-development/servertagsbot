@@ -1,16 +1,14 @@
-<img src="https://i.imgur.com/RICdATH.png">
+<img src="https://i.imgur.com/5qnd7Mb.png">
 
-# Server Tags Bot by [NTM Nathan](https://ntmnathan.glitch.me/)
-**[Invite the Bot](https://discordapp.com/oauth2/authorize?client_id=649805592059183134&scope=bot&permissions=0)** | **[Support Server](https://discordapp.com/invite/G2rb53z)**
-
-
+# Server Tags Bot by [NTM Development](https://dev.ntmnathan.com/)
+**[Invite the Bot](https://discordapp.com/oauth2/authorize?client_id=649805592059183134&scope=bot&permissions=117760)** | **[Support Server](https://discordapp.com/invite/G2rb53z)**
 <hr>
 
-Server Tags is a Discord Bot that focuses on the creation of tags, recalling them and viewing a list of them. The tags all have a unique name on your guild, well for example: when you create the tag "Nate" on "Nate Bot Support", that tag can only be retrieved on that server and not on other servers. It doesn't conflict on other servers.
+Server Tags is a Discord Bot that focuses on the creation of tags, recalling them and viewing a list of them. The tags all have a unique name on your guild, well for example: when you create the tag "Nate" on "NTM Nathantominecraft", that tag can only be retrieved on that server and not on other servers. It doesn't conflict on other servers.
 
 As this was a quick project of mine... I am making this open source for people to use and enjoy. I fully appreciate a star on the Repo and if you find any issues. Feel free to open up an issue and i'll look into it.
 
-If you need any help on hosting, feel free to message me on Discord:<br>NTM Nathan #0001 or join my [Support Server](https://discordapp.com/invite/rvrFHCJ)
+If you need any help on hosting, feel free to message me on Discord:<br>NTM Nathan#0001 or join my [Support Server](https://discord.gg/G2rb53z)
 
 <h3>Commands</h3>
 Prefix: t+ (Changeable if self hosting this bot)
@@ -44,6 +42,8 @@ Prefix: t+ (Changeable if self hosting this bot)
 
 `5.` You can also view the API Json List of Every Tag from Every Server here: https://"projectname".glitch.me/api/tags
 
+*Please Note: I advise that you only use Glitch if you are going to just host it for your own server or a few servers. Get yourself a VPS (From Digital Ocean, GalaxyGate, OVH etc.) if you're going to use this as a main bot or plan to have it in over a lot of servers.*
+
 **Hosting on your Computer:**
 
 `1.` Downloading
@@ -61,7 +61,7 @@ In a new Command Prompt/Terminal window in your project's folder, you'll need to
 
 To start the bot, in the Command Prompt/Terminal window, run the following command:
 
-**`node app.js`**
+**`node server.js`**
 
 This will make the bot online! Don't ever share any tokens/secrets with anybody!
 
@@ -71,9 +71,9 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
   Packages Used
 </h3>
 
-- express.js: 4.16.4
-- discord.js: 11.4.2
-- quick.db: 7.0.0-b21 - **Do not Change quick.db Version!**
+- express.js: 4.17.1
+- discord.js: 12.1.1
+- quick.db: 7.1.1 (Minimum to run is 7.0.0-b21)
 - parse-ms: 2.0.0
 - moment: 2.24.0
 - moment-duration-format: 2.2.2
@@ -87,3 +87,5 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
 - RyansHDs#4461 for being a **Good Developer** for me
 
 - Panda Dev#3934 (Had to put you here for a good reason)
+
+- ꚂharifPoetra#8030 for giving me some good advice on development

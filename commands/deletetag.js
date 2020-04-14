@@ -21,7 +21,7 @@ exports.run = async (client, message, args, color) => {
       if (message.author.id !== createdbyid) return message.channel.send(`**Cannot Delete this Tag!** ❌\n\n*You do not own this Tag!*`)
        if (!name) return message.channel.send("You must specify the name of the Tag to delete.")
 
-    let confirmembed = new Discord.RichEmbed()
+    let confirmembed = new Discord.MessageEmbed()
     .setTitle(`**Delete Tag?**`)
     .setDescription(`**Are you sure you want to Delete this Tag?**\n**\`${name}\`**\n\n*Type **\`yes\`** ✅ to **confirm** this or **\`no\`** to Decline ❌*\n***Typing \`yes\` will result in the Tag Data to disappear.***`)
     .setColor(`#f67b63`)

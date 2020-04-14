@@ -10,14 +10,14 @@ module.exports.run = async (bot, message, args) => {
   let content = "  ";
 
 resp.forEach(resp => { 
-let user = bot.users.find(m => m.id === resp.ID.split('_')[1])
+let user = bot.users.cache.find(m => m.id === resp.ID.split('_')[1])
 if(user === null || undefined) user = "Unknown#0000";
 content += `**\`${resp.data.name}\`** | **Owner »** ${resp.data.createdby}\n`;
 });  
 
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.MessageEmbed()
       .setTitle(`**${message.guild.name}'s Tags**`)
-      .setThumbnail(`${message.guild.iconURL}?size=2048`)
+      .setThumbnail(`${message.guild.iconURL({dynamic: true, size: 2048})}`)
       .setDescription(`${content || `**No Tags Created Yet :(**`}`)
       .setFooter(`Tags not in Order | Run t+taginfo <tagname> for Info`)
       .setColor("#6497c1")

@@ -2,13 +2,13 @@ const Discord = require('discord.js')
 
 exports.run = async (client, message, args) => {
   
-  const user = message.mentions.users.first() || client.users.get(args[0]) ||  message.author;
+  const user = message.mentions.users.first() || client.users.cache.get(args[0]) ||  message.author;
   
-  const embed = new Discord.RichEmbed()
+  const embed = new Discord.MessageEmbed()
   
   .setTitle(`**${user.username}#${user.discriminator}'s avatar**`) 
   .setColor("#e0e0d2")
-  .setImage(user.displayAvatarURL) 
+  .setImage(user.displayAvatarURL({dynamic: true, size: 2048})) 
   
   message.channel.send(embed)
   

@@ -16,9 +16,9 @@
   let name = tags.name
   let date = tags.date
 
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
     .setTitle(`**Tag Info**`)
-    .setThumbnail(`${message.guild.iconURL}?size=2048`)
+    .setThumbnail(`${message.guild.iconURL({dynamic: true, size: 2048})}`)
     .setColor(`#6497c1`)
     .setDescription(`
 **\`${name}\`**
