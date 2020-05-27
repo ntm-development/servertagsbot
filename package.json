@@ -8,10 +8,10 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "discord.js": "^12.1.1",
+    "discord.js": "^12.2.0",
     "quick.db": "^7.1.1",
     "parse-ms": "^2.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.26.0",
     "moment-duration-format": "^2.2.2",
     "dblapi.js": "^2.4.0"
   },

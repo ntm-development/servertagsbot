@@ -1,12 +1,34 @@
 const Discord = require("discord.js");
+const config = require('./config.json')
 const fs = require("fs");
-const bot = new Discord.Client({disableEveryone: true});
 const DBL = require("dblapi.js");
+
+const bot = new Discord.Client({
+  disableMentions: 'everyone',
+  messageCacheMaxSize: 50,
+  messageCacheLifetime: 60,
+  messageSweepInterval: 120,
+  partials: [
+     'MESSAGE',
+     'USER',
+     'GUILD_MEMBER',
+     'CHANNEL'
+    ],
+    intents: [
+     'GUILDS',
+     'GUILD_MESSAGES',
+     'GUILD_VOICE_STATES',
+     'GUILD_PRESENCES',
+     'GUILD_PRESENCES',
+     'GUILD_MESSAGES_REACTIONS',
+    'GUILD_MEMBERS'
+    ],                          
+  });
+
 const dbl = new DBL(process.env.DBLTOKEN, bot);
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
-
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -35,16 +57,15 @@ dbl.on('error', e => {
  console.log(`Server Tags » ${e}`);
 })
 
-
 bot.on("ready", async () => {
   console.log(`ServerTags » Bot online on ${bot.guilds.cache.size} servers!`);
-    bot.user.setActivity("t+help | Managing all the Server Tags!", { type: "PLAYING"})
+    bot.user.setActivity("t+help | Managing all the Server Tags!", { type: "PLAYING"} )
 
-
+  
   bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
-    let prefix = "t+"
+    let prefix = config.prefix
     let messageArray = message.content.split(" ");
     let args = message.content.slice(prefix.length).trim().split(/ +/g);
     let cmd = args.shift().toLowerCase();
