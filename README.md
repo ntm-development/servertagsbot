@@ -72,10 +72,10 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
 </h3>
 
 - express.js: 4.17.1
-- discord.js: 12.1.1
-- quick.db: 7.1.1 (Minimum to run is 7.0.0-b21)
+- discord.js: 12.2.0 
+- quick.db: 7.1.1
 - parse-ms: 2.0.0
-- moment: 2.24.0
+- moment: 2.26.0
 - moment-duration-format: 2.2.2
 
 <h3>
@@ -83,9 +83,3 @@ This will make the bot online! Don't ever share any tokens/secrets with anybody!
 </h3>
 
 - Jazz#0682 for helping test this!
-
-- RyansHDs#4461 for being a **Good Developer** for me
-
-- Panda Dev#3934 (Had to put you here for a good reason)
-
-- ꚂharifPoetra#8030 for giving me some good advice on development
