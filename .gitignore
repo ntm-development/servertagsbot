@@ -1,0 +1,14 @@
+s
+storage
+
+
+
+# Database
+json.sqlite
+shrinkwrap.yaml
+json.sqlite-journal
+database.sqlite
+
+
+# Git
+.git
