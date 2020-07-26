@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
 });
 
 const listener = app.listen(process.env.PORT, function() {
-  console.log('Server Tags is now listening on port ' + listener.address().port);
+  console.log('Server Tags is now online on port ' + listener.address().port);
 });
 
 
