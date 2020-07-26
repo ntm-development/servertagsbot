@@ -1,4 +1,4 @@
-const Discord = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const db = require(`quick.db`)
 const moment = require("moment");
 
@@ -8,7 +8,7 @@ exports.run = async (client, message, args, color) => {
        if (!name) return message.channel.send("You must specify a Tag Name...\n\n*Only __single word tag names__ can be used!*")
   let value = args.splice(1).join(" ")
       if (!value) return message.channel.send("You'll need to provide the content for this Tag!")
-         if (message.author.bot) return message.channel.send(`**Bots cannot use the Tags System!**`)
+      if (message.author.bot) return message.channel.send(`**Bots cannot use the Tags System!**`)
 
 
   let content = value
