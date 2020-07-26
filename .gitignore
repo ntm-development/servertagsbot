@@ -12,3 +12,4 @@ database.sqlite
 
 # Git
 .git
+.env
