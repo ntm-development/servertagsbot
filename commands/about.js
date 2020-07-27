@@ -10,8 +10,8 @@ exports.run = (bot, message, args, func) => {
     Server Tags is a Discord Bot that focuses on the creation of tags, recalling them and viewing a list of them.
 
     **[Developer Site](https://dev.ntmnathan.com/) »** The Developer Website
-    **[Github Repo](https://github.com/NTMNathan/servertagsbot) »** Official Repo of the Bot
-    **[Support Server](https://discordapp.com/invite/G2rb53z) »** Official Community Server
+    **[GitHub Repo](https://github.com/ntm-development/servertagsbot) »** Official Repo of the Bot
+    **[Support Server](https://discord.com/invite/G2rb53z) »** Official Community Server
     **[Donations](https://www.patreon.com/nathantominecraft) »** Be kind and Donate!
     **[Invite](https://discordapp.com/oauth2/authorize?client_id=649805592059183134&scope=bot&permissions=117760) »** Invite Server Tags to your Server
     `)
