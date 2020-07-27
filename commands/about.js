@@ -24,6 +24,6 @@ exports.run = (bot, message, args, func) => {
 }
 
 module.exports.help = {
-  name:"about",
+  name: "about",
   aliases: ["info"]
 }

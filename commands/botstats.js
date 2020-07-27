@@ -1,5 +1,6 @@
 const { version, MessageEmbed } = require("discord.js");
 const moment = require("moment");
+const { stripIndents } = require("common-tags");
 require("moment-duration-format");
 
 exports.run = async (bot, message, args) => { 
@@ -10,7 +11,7 @@ exports.run = async (bot, message, args) => {
             .setTitle("**Server Tags Stats**")
             .setColor("e0e0d2")
             .setThumbnail(`https://i.imgur.com/kCPLvwj.png`)
-            .setDescription(`
+            .setDescription(stripIndents`
             📊 __**Statistics**__
             **Users »** ${bot.users.cache.size}
             **Servers »** ${bot.guilds.cache.size}
@@ -29,13 +30,14 @@ exports.run = async (bot, message, args) => {
             **Node CPU Usage »** ${(process.cpuUsage().user / 1024 / 1024).toFixed(2)}%
 
             **[Dev Website](https://dev.ntmnathan.com/)** | **[Invite](https://discordapp.com/oauth2/authorize?client_id=649805592059183134&scope=bot&permissions=117760)** | **[Hangout Server](https://discordapp.com/invite/G2rb53z)** | **[Vote on top.gg](https://top.gg/bot/649805592059183134/vote)**
-`)
+            `)
             .setFooter(`To learn more about Server Tags, run t+about for special information`)
-        message.channel.send(embedStats)
+
+        message.channel.send(embedStats);
   
 };
 
-  module.exports.help = {
-  name:"botstats",
+module.exports.help = {
+  name: "botstats",
   aliases: ["bot", "stats"]
 }
