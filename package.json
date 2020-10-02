@@ -15,7 +15,7 @@
     "moment": "^2.26.0",
     "moment-duration-format": "^2.2.2",
     "parse-ms": "^2.0.0",
-    "quick.db": "^7.1.1"
+    "quick.db": "^7.1.2"
   },
   "engines": {
     "node": "12.x"
