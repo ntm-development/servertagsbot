@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "19:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: discord.js
+    versions:
+    - 12.5.1
+  - dependency-name: bl
+    versions:
+    - 4.0.3
