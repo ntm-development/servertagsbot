@@ -1,3 +1,7 @@
+# Server Tags - Deprecated [30/6/2021]
+The team at NTM Development would like to thank all servers and users who have used and contributed to Server Tags. Due to hosting costs to keep it up, it will remain open source on the GitHub page and you can contribute to it however you like. However the team will not be offering ANY support for Server Tags after 30/6/2021. Instead we recommend that you use our much more advanced Discord Bot called [Nate Bot](https://natebot.xyz/). Once again, thank you!
+
+<hr>
 <img src="https://i.imgur.com/5qnd7Mb.png">
 
 # Server Tags Bot by [NTM Development](https://dev.ntmnathan.com/)
